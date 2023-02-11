@@ -1,0 +1,127 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.upperSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    width: 700px;
+    font-size: 48px;
+    font-weight: 800;
+}
+.profileSection{
+    width: 370px;
+    height:140px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.profileSection1{
+    display: flex;
+    flex-direction: row;
+}
+.profile{
+    width: 56px;
+    height: 56px;
+}
+.he{
+    width: 150px;
+    color: #6D7D8B;;
+}
+.middle{
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bigOne{
+    width: 700px;
+    height: 899px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 45px;
+    color: #25313C;
+}
+.lowerProfile{
+    width: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.writtenBy{
+    color: #1E2742;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 21px;
+}
+.Shedrack{
+    font-family: 'Mulish';
+    font-style: normal;
+    /* font-weight: 200; */
+    font-size: 24px;
+    line-height: 30px;
+}
+.Ceo{
+    color: #989898;
+    font-family: 'Mulish';
+    font-style: normal;
+    /* font-weight: 600; */
+    font-size: 14px;
+    line-height: 21px;
+}
+.realHr{
+    height: 700px;
+}
+.hr{
+    width: 700px;
+}
+.lowerSection{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+.join{
+    color: #6D7D8B;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+.input{
+    width: 630px;
+    height: 148px;
+    border: 2px solid #BBC8D4;
+    border-radius: 4px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #BBC8D4;
+    margin-top: 16px;
+    margin-left: 16px;
+}
