@@ -1,0 +1,32 @@
+.blogContainer {
+    width: 1200px;
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 200px;
+}
+
+.miniContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: rgb(197, 199, 202);
+    border-radius: 5px;
+    color: rgb(79, 80, 82);
+}
+
+.button:active {
+    transform: translateY(1px);
+}

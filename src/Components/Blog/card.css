@@ -1,0 +1,56 @@
+body {
+    background: #F5F5F5;
+}
+
+.cardContainer {
+    width: 363px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.img {
+    height: 200px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.topic {
+    width: 80%;
+    font-weight: bold;
+    font-size: 24px;
+    height: 58px;
+}
+
+.description {
+    font-size: 14px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 12px;
+    margin: 10px;
+}
+
+.profileImg {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* .container {
+    width: 1440px;
+    height: 2338px;
+    display: flex;
+} */

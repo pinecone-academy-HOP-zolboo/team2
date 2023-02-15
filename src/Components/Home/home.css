@@ -1,7 +1,208 @@
 .Home {
-    width: 100%;
-    height: 100vh;
-    background-image: url(./Images/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  height: fit-content;
+}
+.Header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./Images//background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.pro {
+  margin-left: 200px;
+  width: 40%;
+}
+.grchg {
+  width: 100%;
+  height: 40%;
+  margin-bottom: 30px;
+}
+.grchg p {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 56px;
+  color: white;
+}
+.text2 {
+  width: 75%;
+  height: fit-content;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 163.15%;
+  color: white;
+}
+.inputs {
+  width: 100%;
+  height: 60px;
+  margin-top: 70px;
+}
+.inputs input {
+  width: 60%;
+  height: 100%;
+  border: 1px solid black;
+}
+.inputs button {
+  width: 30%;
+  height: 100%;
+  background-color: #0bbef2;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+.Meeting {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meeting {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 20px;
+}
+.meeting img {
+  border-radius: 20px;
+}
+.dis1 {
+  width: 465px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.header2 p {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+}
+.header2 {
+  width: 100%;
+  height: 30%;
+}
+.dis2 {
+  width: 100%;
+  height: 30%;
+}
+.dis2 p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: none;
+}
+.learn {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+.huree {
+  width: 99%;
+  height: 99%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  background: white;
+  z-index: 1;
+}
+.product1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.huree {
+  width: 99%;
+  height: 99%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  background: white;
+  z-index: 1;
+}
+.bck-img {
+  width: 40%;
+  height: 70%;
+  border-radius: 50px;
+  background-image: url(./Images/meeting-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.bck-img img {
+  width: 240px;
+  height: 110px;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+.product2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pro2 {
+  width: 40%;
+  height: 75%;
+  background-image: url(./Images//bck.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 150px;
+  display: flex;
+  align-items: center;
+}
+.pro2 img {
+  border-radius: 50px;
+  margin-left: 70px;
+}
+.about-us {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.h1 {
+  height: fit-content;
+  font-weight: 800;
+  font-size: 50px;
+}
+.says {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  animation: move 20s linear infinite;
+}
+@keyframes move {
+  0% {
+    transform: translateX(1900px);
+  }
+  100% {
+    transform: translateX(-1900px);
+  }
 }

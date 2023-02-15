@@ -1,6 +1,6 @@
 .navbar {
-  width: 100%;
-  height: 10%;
+  width: 98%;
+  height: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -22,22 +22,6 @@
   position: relative;
   animation: deg 2s ease-in-out 100ms infinite alternate;
 }
-/* @keyframes deg {
-    0% {
-      transform: rotate(0deg);
-      color: black;
-      left: 0px;
-      top: 0px;
-    }
-    50% {
-      transform: rotate(180deg);
-    }
-    100% {
-      transform: rotate(360deg);
-      left: 200px;
-      color: gray;
-    }
-  } */
 .nv-text:hover {
   transform: translateY(-5px);
   font-size: 23px;
