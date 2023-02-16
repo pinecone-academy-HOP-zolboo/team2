@@ -8,11 +8,11 @@ function About(props) {
     <div className="first">
       <div className="ehnii">
         <div className="star">
-          <img src={star} />
-          <img src={star} />
-          <img src={star} />
-          <img src={star} />
-          <img src={star} />
+          <img alt="pic" src={star} />
+          <img alt="pic" src={star} />
+          <img alt="pic" src={star} />
+          <img alt="pic" src={star} />
+          <img alt="pic" src={star} />
         </div>
       </div>
       <div className="text">
@@ -20,7 +20,7 @@ function About(props) {
       </div>
       <div className="sull">
         <div className="profile">
-          <img src={profile} />
+          <img alt="pic" src={profile} />
           <marquee>{name}</marquee>
         </div>
       </div>

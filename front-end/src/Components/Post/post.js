@@ -34,7 +34,7 @@ function Post() {
             <div>
               <div className="title">10 Secrets for managing a remote team</div>
               <div className="profileSection">
-                <img className="profile" src={Ellipse}></img>
+                <img alt="pic" className="profile" src={Ellipse}></img>
                 <div className="profileSection1">
                   <div className="he">{data.AccountName}</div>
                   <div className="he">2nd January,2022</div>
@@ -42,7 +42,7 @@ function Post() {
               </div>
             </div>
 
-            <img src={Rectangle}></img>
+            <img alt="pic" src={Rectangle}></img>
 
             <div className="middle">
               <div className="bigOne">
@@ -50,7 +50,7 @@ function Post() {
               </div>
 
               <div className="lowerProfile">
-                <img src={Ellipse}></img>
+                <img alt="pic" src={Ellipse}></img>
                 <div>
                   <div>
                     <div className="writtenBy">Written by</div>
@@ -69,8 +69,8 @@ function Post() {
           <div className="lowerSection">
             <div className="join">Join the conversation</div>
             <div>
-              <img src={Ellipse2}></img>
-              <input className="input" placeholder="comment"></input>
+              <img alt="pic" src={Ellipse2}></img>
+              <input className="input" placeHolder="comment"></input>
             </div>
           </div>
         </div>

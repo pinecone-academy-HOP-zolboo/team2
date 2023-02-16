@@ -12,12 +12,12 @@ export const Card = (props) => {
     ]
 
     return (
-        <div onClick={jumpToOtherPosts} className="cardContainer">
-            <img alt='' className="img" src={image}></img>
+        <div className="cardContainer">
+            <img alt="pic" className="img" src={image}></img>
             <div className="topic">{topic}</div>
             <div className="description">{description}</div>
             <div className="user">
-                <img alt='' className="profileImg" src={profileImg} />
+                <img alt="pic" className="profileImg" src={profileImg} />
                 <div className="userName">{userName}</div>
                 <p>/</p>
                 <div className="date">{date}</div>

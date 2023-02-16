@@ -40,15 +40,15 @@ function Home() {
             />
           </div>
           <div className="meeting">
-            <img src={Meeting} />
+            <img alt="pic" src={Meeting} />
           </div>
         </div>
       </div>
       <div className="product1">
         <div className="huree">
           <div className="bck-img">
-            <img src={Event} />
-            <img src={Hall} />
+            <img alt="pic" src={Event} />
+            <img alt="pic" src={Hall} />
           </div>
           <Task
             text={
@@ -69,7 +69,7 @@ function Home() {
             />
           </div>
           <div className="pro2">
-            <img src={Event1} />
+            <img alt="pic" src={Event1} />
           </div>
         </div>
       </div>
