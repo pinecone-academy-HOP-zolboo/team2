@@ -1,8 +1,30 @@
 import { Card } from "./card";
+import  axios from "axios"
+import React, {useEffect, useState} from "react"
 import Footer from "../Footer/footer";
 import "./blog.css";
 
+
 export const Blog = () => {
+
+  const [data, setData] = useState([])
+
+  const instanse = axios.create({
+    baseURL:`http://localhost:8000`
+  })
+
+  const getdata = async() =>{
+    try {
+      const tes = await instanse.get("/post");
+      setData(tes.data.data);
+      console.log(tes.data.data)
+    } catch(error){}
+  }
+  
+  useEffect(()=>{
+    getdata()
+  },[])
+
   return (
     <div className="blogMain">
       <div className="blogContainer">
@@ -18,6 +40,7 @@ export const Blog = () => {
             description="I need help man, bad"
             userName="Jimi hendrix"
             date="18nd of September 1970"
+            // userId={}
           />
           <Card
             image="https://consequence.net/wp-content/uploads/2018/12/dean-from-hell-guitar.png"
