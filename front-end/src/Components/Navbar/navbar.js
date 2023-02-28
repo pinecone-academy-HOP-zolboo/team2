@@ -15,6 +15,9 @@ function Navbar() {
             <Link to="/Service">Services</Link>
           </div>
           <div className="nv-text">Contact</div>
+          <div className="nv-text">
+            <Link to="/Login">Login</Link>
+          </div>
           <div className="nv-tex">
             <p>
               <Link to="/post/:id">Get Access</Link>

@@ -6,6 +6,7 @@ import Post from "./Components/Post/post";
 import App from "./App";
 import { Blog } from "./Components/Blog/blog";
 import Navbar from "./Components/Navbar/navbar";
+// import Login from "./Components/Login/login"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +17,7 @@ root.render(
         <Route path="/main" element={<App />} />
         <Route path="/post/:id" element={<Post />} />
         <Route path="/Blog" element={<Blog />} />
+        {/* <Route path="/Login" element={<Login />} /> */}
       </Route>
     </Routes>
   </BrowserRouter>
