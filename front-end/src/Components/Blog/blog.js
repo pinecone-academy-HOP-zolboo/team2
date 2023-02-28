@@ -34,7 +34,7 @@ export const Blog = () => {
         </div>
         <div className="miniContainer">
           <Card
-            image="https://guitarvillage.co.uk/wp-content/uploads/2022/10/Fender-Jimi-Hendrix-Stratocaster-Olympic-White-290_01-compress.jpg"
+            image="https://guitarvillage  .co.uk/wp-content/uploads/2022/10/Fender-Jimi-Hendrix-Stratocaster-Olympic-White-290_01-compress.jpg"
             profileImg="https://avatarfiles.alphacoders.com/123/thumb-123337.png"
             topic="Used too much barbiturate, *cough* *cough*"
             description="I need help man, bad"
