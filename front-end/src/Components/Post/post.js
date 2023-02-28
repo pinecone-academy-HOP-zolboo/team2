@@ -6,19 +6,16 @@ import Ellipse from "../../assest/Ellipse.svg";
 import Rectangle from "../../assest/Rectangle.svg";
 import Ellipse2 from "../../assest/Ellipse2.svg";
 import Footer from "../Footer/footer";
+import { instance } from "../../instance";
 
 function Post() {
   
   const { id } = useParams();
   const [data, setData] = useState([])
 
-  const instanse = axios.create({
-    baseURL:`http://localhost:8000`
-  })
-
   const getdata = async() =>{
     try {
-      const tes = await instanse.get(`/post/${id}`);
+      const tes = await instance.get(`/post/${id}`);   //had to add instance, since its usefull for further use
       setData(tes.data.data);
       console.log(tes.data.data)
     } catch(error){}

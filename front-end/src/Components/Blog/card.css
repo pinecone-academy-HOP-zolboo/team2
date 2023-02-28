@@ -49,6 +49,16 @@ body {
     border-radius: 50%;
 }
 
+#button {
+    width: 87px;
+    height: 20px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
 /* .container {
     width: 1440px;
     height: 2338px;

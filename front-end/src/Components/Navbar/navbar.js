@@ -17,7 +17,7 @@ function Navbar() {
           <div className="nv-text">Contact</div>
           <div className="nv-tex">
             <p>
-              <Link to="/Post">Get Access</Link>
+              <Link to="/post/:id">Get Access</Link>
             </p>
           </div>
         </div>
