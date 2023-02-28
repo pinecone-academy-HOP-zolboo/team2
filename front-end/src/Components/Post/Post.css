@@ -103,7 +103,7 @@
     width: 700px;
 }
 .lowerSection{
-    height: 700px;
+    height: 360px;
     display: flex;
     flex-direction: column;
 }

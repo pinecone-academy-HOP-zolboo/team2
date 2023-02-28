@@ -15,7 +15,7 @@ exports.getPosts = async (request, response, next) => {
 exports.getPost = async (request, response, next) => {
     const { id } = request.params;
     try {
-        const user = await UserModel.findById(id);
+        const user = await PostModel.findById(id);
         response.status(200).json({ message: true, data: user });
     } catch (error) {   
         return response.status(400).json({ message: error, data: null })

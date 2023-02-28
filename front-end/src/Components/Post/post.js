@@ -1,13 +1,15 @@
 import "./Post.css";
 import  axios from "axios"
-import React, {useEffect, useState} from "react"
+import React, {useEffect , useState} from "react"
+import { useParams } from 'react-router-dom';
 import Ellipse from "../../assest/Ellipse.svg";
 import Rectangle from "../../assest/Rectangle.svg";
 import Ellipse2 from "../../assest/Ellipse2.svg";
 import Footer from "../Footer/footer";
 
 function Post() {
-
+  
+  const { id } = useParams();
   const [data, setData] = useState([])
 
   const instanse = axios.create({
@@ -45,9 +47,7 @@ function Post() {
             <img alt="pic" src={Rectangle}></img>
 
             <div className="middle">
-              <div className="bigOne">
-           
-              </div>
+              <div className="bigOne">{data.description}</div>
 
               <div className="lowerProfile">
                 <img alt="pic" src={Ellipse}></img>
