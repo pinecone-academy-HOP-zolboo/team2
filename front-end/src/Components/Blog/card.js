@@ -3,13 +3,14 @@ import { useNavigate } from "react-router-dom";
 
 export const Card = (props) => {
 
-    const { image, topic, description, profileImg, userName, date, userId } = props;
+    const { image, topic, description, profileImg, userName, date, _id } = props;
 
     const navigate = useNavigate()
 
-    const jumpToOtherPosts = () => [
-        navigate(`/post/${userId}`)
-    ]
+    const jumpToOtherPosts = () => {
+        navigate(`/post/${_id}`)
+        console.log(_id)
+    }
 
     return (
         <div className="cardContainer">

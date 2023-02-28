@@ -14,7 +14,7 @@ root.render(
       <Route path="" element={<Navbar />}>
         <Route path="/" element={<App />} />
         <Route path="/main" element={<App />} />
-        <Route path="/Post" element={<Post />} />
+        <Route path="/post/:id" element={<Post />} />
         <Route path="/Blog" element={<Blog />} />
       </Route>
     </Routes>
