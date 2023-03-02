@@ -1,0 +1,129 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: #E4ECF6;
+    width: 25vw;
+    height: 45vh;
+    background: rgba(255, 255, 255, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    overflow: hidden;
+    margin-top: 10vh;
+    /* border: 2px black solid; */
+}
+
+.center h1{
+    color: #5E2992;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt-field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt-field input {
+    width: 16vw;
+    /* border-radius: 15px; */
+    padding: 0 5px;
+    height: 4vh;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.txt-field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.txt-field span::before{
+    content: '';
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    width: 16vw;
+    height: 2px;
+    background: #A7CDFA;
+}
+
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label{
+    top: -10px;
+    color: #A7CDFA ;
+}
+
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before{
+    width: 16vw;
+}
+
+.pass{
+    margin-top: 1vh;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.pass:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 16vw;
+    height: 5vh;
+    border: 2px solid;
+    background: #A7CDFA;
+    border-radius: 25px;
+    font-size: 1.3vw;
+    outline: none;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 2vh;
+}
+
+button:hover{
+    border-color: #A7CDFA;
+    transition: .5s;
+}
+
+.signup-link{
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 0.8vw;
+    color: #666666;
+}
+
+.signup-link a{
+    color: #A7CDFA;
+    text-decoration: none;
+}
+
+.signup-link a:hover{
+    text-decoration: underline;
+    transition: .5s;
+}
