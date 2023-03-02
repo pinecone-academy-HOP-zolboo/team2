@@ -1,11 +1,17 @@
 const { model, Schema } = require("mongoose");
 
-const PostScheme = new Schema({
+const DataScheme = new Schema({
     description: String,
     AccountName: String,
+});
+
+const PostScheme = new Schema({
     title: String, 
     image: String
-    // registerDate: {type :Date, default: Date.now},
 });
-const PostModel = model("data", PostScheme);
+
+const DataModel = model("data", DataScheme);
+module.exports = DataModel
+
+const PostModel = model("post", PostScheme);
 module.exports = PostModel;
