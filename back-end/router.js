@@ -10,7 +10,7 @@ entry.get('/', (req, res) => {
     res.json({ module: "welcome to backend" })
 })
 
-entry.post("post/create", createPost)
+entry.post("/post/create", createPost)
 entry.get("/post", getPosts)
 entry.get("/post/:id", getPost)
 entry.delete('/post/delete/:id', DeletePost)

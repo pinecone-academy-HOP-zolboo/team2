@@ -1,7 +1,7 @@
 const { request } = require("http");
 const PostModel = require("./model");
 const DataModel = require("./model");
-const CommentModel = require("./model");
+// const CommentModel = require("./model");
 
 exports.getPosts = async (request, response, next) => {
   try {
@@ -23,12 +23,13 @@ exports.getPost = async (request, response, next) => {
     return response.status(400).json({ message: error, data: null });
   }
 };
-exports.createComment = async (req, res) => {
-  const { id } = req.params;
-  try {
-    await PostModel.findByIdAndUpdate(id, req.body);
-    res.status(200).json(result);
-  } catch (error) {
-    return res.status(400).json({ message: error, data: null });
-  }
-};
+
+// exports.createComment = async (req, res) => {
+//   const { id } = req.params;
+//   try {
+//     await PostModel.findByIdAndUpdate(id, req.body);
+//     res.status(200).json(result);
+//   } catch (error) {
+//     return res.status(400).json({ message: error, data: null });
+//   }
+// };

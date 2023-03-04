@@ -10,7 +10,7 @@ export const Source = ({ children }) => {
 
   const getPostData = async () => {
     const res = await instance.get(`/post`);
-    console.log(res)
+    // console.log(res)
     setPostData(res.data.data);
   }
 
