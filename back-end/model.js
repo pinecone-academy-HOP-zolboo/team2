@@ -8,7 +8,7 @@ const DataScheme = new Schema({
 const PostScheme = new Schema({
   title: String,
   image: String,
-  comment: [String],
+  // comment: [String],
 });
 
 const DataModel = model("data", DataScheme);

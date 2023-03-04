@@ -31,6 +31,7 @@ export const CreatePost = () => {
         <div className="container">
             <div className="inputContainer">
                 <input placeholder="title" type={'text'} id="input" onChange={(e) => setTitle(e.target.value)} value={title}></input>
+                <button id="uploadButton">Upload Image</button>
                 <input type={'file'} id="fileInput" accept="image/jpeg, image/jpg, image/gif, image/png"></input>
                 <Button onClick={createPost} text={"Submit"} />
             </div>

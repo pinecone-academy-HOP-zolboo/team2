@@ -65,3 +65,15 @@ body {
     height: 2338px;
     display: flex;
 } */
+
+#uploadButton{
+    position: absolute;
+}
+
+#fileInput{
+  position: relative;
+  opacity: 0;
+  height: 50px;
+  width: 100%;
+  background-color: red;
+}
