@@ -1,17 +1,18 @@
 const { model, Schema } = require("mongoose");
 
 const DataScheme = new Schema({
-    description: String,
-    AccountName: String,
+  description: String,
+  AccountName: String,
 });
 
 const PostScheme = new Schema({
-    title: String, 
-    image: String
+  title: String,
+  image: String,
+  comment: [String],
 });
 
 const DataModel = model("data", DataScheme);
-module.exports = DataModel
+module.exports = DataModel;
 
 const PostModel = model("post", PostScheme);
 module.exports = PostModel;
