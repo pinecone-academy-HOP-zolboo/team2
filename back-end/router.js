@@ -1,6 +1,7 @@
 const express = require("express");
 const createPost = require("./createPost");
 const { getPosts, getPost } = require("./controller");
+const DeletePost = require("./deletePost");
 
 const entry = express.Router();
 
@@ -11,5 +12,6 @@ entry.get('/', (req, res) => {
 entry.post('/post/create', createPost)
 entry.get("/post", getPosts)
 entry.get("/post/:id", getPost)
+entry.delete('/post/delete/:id', DeletePost)
 
 module.exports = entry;

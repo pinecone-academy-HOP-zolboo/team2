@@ -49,10 +49,11 @@ body {
     border-radius: 50%;
 }
 
-#button {
+/* #button {
     width: 87px;
+    background-color: transparent;
     height: 20px;
-}
+} */
 
 .inputContainer {
     display: flex;

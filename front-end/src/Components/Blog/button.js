@@ -1,10 +1,10 @@
 import './card.css'
 
 export const Button = (props) => {
-    const { onClick } = props
+    const { onClick, text } = props
     
     return (
-      <button id="btton" onClick={onClick}>Submit here</button>
+      <button id='button' onClick={onClick}>{text}</button>
     )
   }
   

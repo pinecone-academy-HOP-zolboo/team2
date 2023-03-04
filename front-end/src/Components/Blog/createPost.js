@@ -26,12 +26,13 @@ export const CreatePost = () => {
         const image = await convertImage();
         const { data } = await instance.post('/post/create', { title: title, image: image });
     }
+
     return (
         <div className="container">
             <div className="inputContainer">
                 <input placeholder="title" type={'text'} id="input" onChange={(e) => setTitle(e.target.value)} value={title}></input>
                 <input type={'file'} id="fileInput" accept="image/jpeg, image/jpg, image/gif, image/png"></input>
-                <Button onClick={createPost} />
+                <Button onClick={createPost} text={"Submit"} />
             </div>
         </div>
     );
