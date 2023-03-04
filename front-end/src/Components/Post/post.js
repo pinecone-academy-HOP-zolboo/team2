@@ -1,7 +1,7 @@
 import "./Post.css";
-import  axios from "axios"
-import React, {useEffect , useState} from "react"
-import { useParams } from 'react-router-dom';
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import Ellipse from "../../assest/Ellipse.svg";
 import Rectangle from "../../assest/Rectangle.svg";
 import Ellipse2 from "../../assest/Ellipse2.svg";
@@ -9,26 +9,26 @@ import Footer from "../Footer/footer";
 import { instance } from "../../instance";
 
 function Post() {
-  
   const { id } = useParams();
-  const [data, setData] = useState([])
+  const [data, setData] = useState([]);
 
-  const getdata = async() =>{
+  const getdata = async () => {
     try {
-      const tes = await instance.get(`/post/${id}`);   //had to add instance, since its usefull for further use
+      const tes = await instance.get(`/post/${id}`); //had to add instance, since its usefull for further use
       setData(tes.data.data);
-      console.log(tes.data.data)
-    } catch(error){}
-  }
-  
-  useEffect(()=>{
-    getdata()
-  },[])
+      console.log(tes.data.data);
+    } catch (error) {}
+  };
+
+  useEffect(() => {
+    getdata();
+  }, []);
+
 
   return (
     <div className="post-main">
       <div className="main">
-        <div className="container">
+        <div className="post-container">
           <div className="upperSection">
             <div>
               <div className="title">10 Secrets for managing a remote team</div>
@@ -44,7 +44,10 @@ function Post() {
             <img alt="pic" src={Rectangle}></img>
 
             <div className="middle">
-              <div className="bigOne">{data.description}</div>
+              <div className="bigOne">
+                {data.description}
+                <p></p>
+              </div>
 
               <div className="lowerProfile">
                 <img alt="pic" src={Ellipse}></img>

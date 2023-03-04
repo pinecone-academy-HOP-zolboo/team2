@@ -47,7 +47,7 @@ function Footer () {
               <p>Twitter</p>
             </div>
           </div>
-          <div className="center">
+          <div className="footer-center">
             <div className="c-left">
               <div className="Tag">Use cases</div>
               <div className="social">UI Design</div>
